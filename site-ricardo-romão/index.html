@@ -1,93 +1,260 @@
 <!DOCTYPE html>
-<html lang="pt">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Ricardo Romão - Instalações Auto</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-
-    <header>
-      <h1>Ricardo Romão</h1>
-      <p>Especialista em Instalações Auto – Rádios, LEDs e muito mais</p>
-    </header>
-
-    <nav>
-      <a href="#inicio">Início</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#galeria">Galeria</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contacto">Contacto</a>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricardo Romão - Instalações Auto | Profissionalismo e Qualidade</title>
+    <meta name="description" content="Mais de 20 anos de experiência em instalações automóveis. Rádios, multimédia, câmaras, sensores e iluminação LED. Lisboa, Portugal.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">Ricardo Romão</a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#servicos" class="nav-link">Serviços</a>
+                <a href="produtos.html" class="nav-link">Produtos</a>
+                <a href="#galeria" class="nav-link">Galeria</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+                <button class="btn btn-primary">Orçamento Grátis</button>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
     </nav>
 
-    <section id="inicio">
-      <h2>Bem-vindo!</h2>
-      <p>Profissionalismo e qualidade em multimédia. Mais de 20 anos de experiência ao seu serviço.</p>
-    </section>
-
-    <section id="servicos">
-      <h2>Serviços</h2>
-      <ul>
-        <li>Instalação e venda de rádios e multimédia</li>
-        <li>Montagem de iluminação LED</li>
-        <li>Câmaras(Frontal/Traseira) e sensores</li>
-        <li>Personalização de interiores</li>
-        <li>Instalação de sistemas de som, alarmes e localizadores</li>
-      </ul>
-    </section>
-
-    <section id="galeria">
-      <h2>Galeria</h2>
-      <div class="polaroid-gallery">
-        <!-- Fotos -->
-        <div class="polaroid"><img src="galeria/foto1.jpg" alt="Foto 1"></div>
-        <div class="polaroid"><img src="galeria/foto2.jpg" alt="Foto 2"></div>
-        <div class="polaroid"><img src="galeria/foto3.jpg" alt="Foto 3"></div>
-        <div class="polaroid"><img src="galeria/foto4.jpg" alt="Foto 4"></div>
-        <div class="polaroid"><img src="galeria/foto5.jpg" alt="Foto 5"></div>
-        <div class="polaroid"><img src="galeria/foto6.jpg" alt="Foto 6"></div>
-        <div class="polaroid"><img src="galeria/foto7.jpg" alt="Foto 7"></div>
-        <div class="polaroid"><img src="galeria/foto8.jpg" alt="Foto 8"></div>
-        <div class="polaroid"><img src="galeria/foto9.jpg" alt="Foto 9"></div>
-
-        <!-- Vídeo -->
-        <div class="polaroid">
-          <video controls>
-            <source src="galeria/video.mp4" type="video/mp4">
-            O seu navegador não suporta o elemento vídeo.
-          </video>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">+20 Anos de Experiência</div>
+                    <h1 class="hero-title">Bem-vindo!</h1>
+                    <p class="hero-subtitle">
+                        Instalação de rádios e multimédia<br>
+                        para o seu automóvel com qualidade<br>
+                        e precisão.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="produtos.html" class="btn btn-primary btn-large">Ver Produtos</a>
+                        <a href="#contacto" class="btn btn-outline btn-large">Contactar Agora</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="/placeholder.svg?height=400&width=600&text=Logo+Ricardo+Romão" alt="Logo Ricardo Romão">
+                </div>
+            </div>
         </div>
-  </div>
     </section>
 
-    <section id="sobre">
-      <h2>Sobre o Ricardo</h2>
-      <p>Atua na zona de Lisboa. Reconhecido pela dedicação, pontualidade e atenção ao detalhe.</p>
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Serviços</h2>
+                <p>Profissionalismo e qualidade em multimédia. Mais de 20 anos de experiência ao seu serviço.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon purple">
+                        <i class="fas fa-radio"></i>
+                    </div>
+                    <h3>Rádios e Multimédia</h3>
+                    <p>Instalação e venda de sistemas de som modernos</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon blue">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Iluminação LED</h3>
+                    <p>Montagem de sistemas de iluminação personalizados</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon green">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Câmaras e Sensores</h3>
+                    <p>Sistemas de segurança e assistência ao condutor</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon orange">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Personalização</h3>
+                    <p>Customização completa de interiores automóveis</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section>
-      <h2>Contato</h2>
-        <form action="https://formspree.io/f/xrblprwk" method="POST">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" required>
 
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="mensagem">Mensagem:</label>
-          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-          <button type="submit">Enviar</button>
-        </form>
+    <!-- Gallery Section -->
+    <section id="galeria" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galeria</h2>
+                <p>Veja alguns dos nossos trabalhos realizados com dedicação e atenção ao detalhe.</p>
+            </div>
+            
+            <div class="polaroid-gallery">
+                <div class="polaroid rotate-left">
+                    <div class="pin"></div>
+                    <div class="polaroi"><img src="galeria/foto1.jpg" alt="Foto 1"></div>
+                </div>
+                <div class="polaroid rotate-right">
+                    <div class="pin"></div>
+                    <div class="polaroi"><img src="galeria/foto2.jpg" alt="Foto 2"></div>
+                </div>
+                <div class="polaroid rotate-left">
+                    <div class="pin"></div>
+                    <div class="polaroi"><img src="galeria/foto3.jpg" alt="Foto 3"></div>
+                </div>
+                <div class="polaroid rotate-right">
+                    <div class="pin"></div>
+                     <div class="polaroi"><img src="galeria/foto4.jpg" alt="Foto 4"></div>
+                </div>
+                <div class="polaroid rotate-left">
+                    <div class="pin"></div>
+                    <div class="polaroi"><img src="galeria/foto5.jpg" alt="Foto 5"></div>
+                </div>
+                <div class="polaroid rotate-right">
+                    <div class="pin"></div>
+                    <div class="polaroi"><img src="galeria/foto6.jpg" alt="Foto 6"></div>
+                </div>
+                <div class="polaroid rotate-left">
+                    <div class="pin"></div>
+                    <div class="polaroi"><img src="galeria/foto7.jpg" alt="Foto 7"></div>
+                </div>
+                <div class="polaroid rotate-right">
+                    <div class="pin"></div>
+                    <div class="polaroi"><img src="galeria/foto8.jpg" alt="Foto 8"></div>
+                </div>
+            </div>
+        </div>
     </section>
 
-      <p>📞 WhatsApp: <strong>+351 914 566 401</strong><br>📧 Email: <strong>ricardoromao747@gmail.com</strong></p>
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Sobre o Ricardo</h2>
+                
+                <div class="stats-grid">
+                    <div class="stat">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">Anos de Experiência</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Clientes Satisfeitos</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Garantia de Qualidade</div>
+                    </div>
+                </div>
+                
+                <p class="about-text">
+                    Profissional dedicado que atua na zona de Lisboa. Reconhecido pela dedicação, pontualidade e atenção ao
+                    detalhe em cada instalação. A sua paixão pela tecnologia automóvel e o compromisso com a excelência fazem
+                    de cada projeto uma obra de arte.
+                </p>
+                
+                <div class="badges">
+                    <span class="badge-item">
+                        <i class="fas fa-star"></i>
+                        Certificado
+                    </span>
+                    <span class="badge-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Lisboa
+                    </span>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-      <p>&copy; 2025 Ricardo Romão. Todos os direitos reservados.</p>
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contacto</h2>
+                <p>Pronto para transformar o seu automóvel? Entre em contacto connosco!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <p>+351 914 566 401</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>ricardoromao747@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Localização</h3>
+                            <p>Lisboa, Portugal</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form" action="https://formspree.io/f/xrblprwk" method="POST">
+                        <div class="form-group">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" required placeholder="O seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="o.seu.email@exemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Descreva o que pretende instalar no seu automóvel..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ricardo Romão. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
