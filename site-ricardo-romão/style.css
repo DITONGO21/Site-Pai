@@ -741,6 +741,12 @@ h6 {
   padding: 2rem 0;
 }
 
+/* Footer Logo */
+.footer-logo {
+    width: 400px;   /* ajuste o valor conforme desejar */
+    height: auto;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav-menu {
