@@ -1,25 +1,22 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = strip_tags(trim($_POST["nome"]));
+    $nome = strip_tags(trim($_POST["name"]));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-    $mensagem = trim($_POST["mensagem"]);
+    $mensagem = trim($_POST["message"]);
 
-    $destinatario = "romao_4@msn.com";
+    $destinatario = "goncalo.romao24@gmail.com";
     $assunto = "Nova mensagem do site";
 
-    $conteudo = "Nome: $nome\n";
-    $conteudo .= "Email: $email\n\n";
-    $conteudo .= "Mensagem:\n$mensagem\n";
+    $corpo = "Nome: $nome\n";
+    $corpo .= "Email: $email\n\n";
+    $corpo .= "Mensagem:\n$mensagem\n";
 
     $cabecalhos = "From: $nome <$email>";
 
-    if (mail($destinatario, $assunto, $conteudo, $cabecalhos)) {
+    if (mail($destinatario, $assunto, $corpo, $cabecalhos)) {
         echo "Mensagem enviada com sucesso.";
     } else {
-        echo "Erro ao enviar a mensagem. Tente novamente.";
+        echo "Erro ao enviar a mensagem.";
     }
-} else {
-    http_response_code(403);
-    echo "Método não permitido.";
 }
 ?>
